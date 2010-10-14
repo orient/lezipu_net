@@ -1,0 +1,462 @@
+﻿/*Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.8.0r4
+
+*
+* YUI Reset
+* @module reset
+* @namespace
+* @requires
+ */
+html
+{
+	color: #000;
+}
+
+body
+{
+	background: url(images/stripes.png);
+	font-size: 12px;
+	width: 100%;
+	font-family: "宋体",Arial, SimSun, serif, sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6,form, fieldset, legend, input, button, textarea, p, th, td, ul, a
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: inherit:
+}
+
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: transparent;	
+	width: 100%;
+}
+td
+{
+	font-size: 12px;
+
+}
+th 
+{
+	font-size:12px;
+}
+tr, th
+{
+	height: 24px;
+	line-height:24px;
+	
+}
+img, fieldset
+{
+	border: 0;
+}
+select
+{
+	height: 24px;
+	margin-right: 10px;
+}
+
+ul
+{
+	list-style-type: none;
+	
+}
+
+li
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+caption, th
+{
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/*because legend doesn't inherit in IE*/
+legend
+{
+	color: #000;
+}
+input, button, textarea, select, optgroup, option
+{
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	vertical-align: middle;
+}
+/*@purpose To enable resizing for IE
+@branch For IE6-Win, IE7-Win*/
+input, button, textarea, select
+{
+	font-size: 100%;
+}
+
+/* \\\\\\\\\ css reset end ///////// */	
+
+/* \\\\\\\\\ header style start ///////// */
+
+	#logo
+	{
+		background: #424242 url(images/header_bg.gif) repeat-x;		
+		height: 30px;
+		line-height: 30px;
+	}
+/* \\\\\\\\\ header style end ///////// */
+
+/* \\\\\\\\\ login-search style start ///////// */
+
+
+/* \\\\\\\\\ login-search  style end ///////// */
+	h1
+	{
+		font-size: 14px;
+		margin: 10px 0px 5px 5px;
+		font-weight: bold;
+	}
+	
+	h2
+	{
+		color: #A74841;
+		font-weight: bold;
+	}
+	
+	a
+	{
+		color: #9E0728;
+		font-weight: bold;
+		text-decoration: none;
+		
+	}
+	
+	a.btn
+	{
+		background: url(images/btn_b1.gif);
+		display: inline-block;
+		width: 100px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		vertical-align: middle;
+		color: #ffffff;
+		margin-right: 5px;
+	}
+	
+	.t_c
+	{
+		text-align: center;
+	}
+	
+	#content
+	{
+		
+		padding: 5px ;
+	}
+	
+	#login
+	{
+		background: #ffffff;
+		margin-top: 5px ;		
+		padding: 5px 10px;
+		border: 1px solid #dedede;
+		border-radius: 5px;
+		position: relative;
+	}
+	
+	#login p
+	{
+		padding: 5px 0px ;
+		border-top: 1px dashed #cccccc;
+		margin-top:2px;
+		
+	}
+	
+	#login a , #bottom_nav p a
+	{
+		padding: 6px 10px;
+	}
+	
+	#search
+	{
+		text-align: center;
+		background: #efefef;
+		margin-top: 5px;		
+		padding: 5px;
+		border: 1px solid #dedede;
+		border-radius: 5px;
+	}
+	#q
+	{
+		background: #ffffff;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		font-size: 1.5em;
+		height: 20px;
+		line-height: 13px;
+		padding: 4px 5px;
+		width: 92%;
+		
+	}
+	#search_btn
+	{
+		border: none;
+		color: #ffffff;
+		width: 50px;
+		height: 28px;
+		margin-left: -50px;
+		cursor: pointer;
+		background-color: #B85148;
+		border-radius: 5px;
+		border: 1px solid #B85148;
+	}
+	
+	#footer
+	{
+		clear: both;
+		color: #646464;
+		margin: 10px 0px;
+		padding: 0px 15px;
+	}
+	
+	#shop_info, #mayor_info, #space_info, #login_form
+	{
+		background: #ffffff;
+		border: 1px solid #ccc;
+		border-radius: 5px 5px;
+		padding: 5px;
+		margin-top: 5px;
+	}
+	div.home ul li 
+	{
+		clear: both;
+		display: block;
+		position: relative;
+	}
+	
+	div.home ul li:first-child div.post_list
+	{
+		border-top: 1px solid #d5d5d5;
+
+	}
+	div.home ul li:last-child div.post_list
+	{
+		border-bottom: 1px solid #d5d5d5;
+
+	}
+	div.post_list
+	{
+		
+		background: #ffffff url(images/entryicon_s.png) 100% 50% no-repeat ;
+		border: 1px solid #d5d5d5;
+		padding: 5px 1% ;
+		margin-bottom: -1px;
+		float: left;
+		width: 98%;
+	}
+	
+	.home .title
+	{
+		margin-left: 45px;
+		padding: 6px 0px;
+	}
+	
+	.home .title h2
+	{
+		display: table;
+		height: 100%;		
+	}
+	
+	.home .title h2 a
+	{
+		display: table-cell;
+		font-size: 1em;
+		vertical-align: middle;
+		padding-right: 25px;
+		color: black;
+		line-height: 1.2em;
+	}
+	
+	div.c_b
+	{
+		clear: both;
+	}
+	
+	
+	span.time
+	{
+		color: #646464;
+		font-size: 0.7em;
+	}
+	
+	.home div.entry
+	{
+		width: 35px;
+		float: left;
+		padding: 4px 0px;
+		
+	}
+	
+	.home div.entry img
+	{
+		display: block;
+		width: 35px;
+		height: 35px;
+		float: left;
+		padding: 3px 0px;
+	}
+	
+	#shop_info table th, #mayor_info table th  
+	{
+		width: 80px;
+	}
+	
+	#mayor_info table td.mayor_img 
+	{
+		width: 70px;
+	}
+	
+	.space_home h1
+	{
+		margin: 5px 0px;
+		padding: 6px 0px;
+	}
+	
+	.space_home h1 span, .space_home h1 a
+	{
+		padding: 6px;
+		border: 1px solid #d5d5d5;
+		font-size: 0.9em;
+	}
+	
+	.space_home h1 a
+	{
+		background: none;
+	}
+	
+	.space_home h1 span
+	{
+		background: #ffffff;
+	}
+	
+	#space_info ul li
+	{
+		padding: 8px 0px;
+		border-bottom: 1px dashed #d5d5d5;
+		line-height: 1.5em;
+	}
+	
+	#space_info ul li:last-child
+	{
+		border: none;
+	}
+	
+	#space_info ul li blockquote, #space_info ul li p 
+	{
+		margin: 0.6em 50px;
+	}
+	
+	#space_info table th 
+	{
+		width: 100px;
+	}
+	
+	.login_tip
+	{
+		margin: 15px 0px;
+		font-size: 1em;
+	}
+	
+	#login_form form
+	{
+		width: 80%;
+		margin: 0px auto;
+	}
+	
+	#login_form form label
+	{
+		display: block;	
+		margin: 10px 0px 5px;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	
+	#login_form form input
+	{
+		border: 1px solid #E6DB5D;
+		height: 20px;
+		line-height: 13px;
+		padding: 3px 4px;
+		width: 98%;	
+		background: #FEFEFA;
+	}
+	
+	#login_form form input#check
+	{
+		width: 20px;
+		border: none;
+		background: none;
+	}
+	
+	#login_form form input#submit
+	{
+		width: 25%;
+		height: 30px;
+		cursor: pointer;
+		background: #FAF398;
+		border: 1px solid #EBE27E;
+		color: #fffff;
+	}
+	
+	#login_form form div
+	{
+		text-align: center;
+		margin: 5px 0px;
+	}
+	
+	#bottom_nav, #bottom_nav p 
+	{
+		margin: 5px 0;
+	}
+
+	p.error
+	{
+		padding: 5px;
+		border: 1px solid #DD847A;
+		background-color: #F4D9D5;
+		color: #D25F52;
+		font-weight: bold;
+		
+	}
+	
+	p.error_color
+	{
+		color: #D25F52;	
+		margin-top: 5px;
+		
+	}
+	
+	p.time
+	{
+		margin-left: 15px;
+	}
+	
+	div.update
+	{
+		padding: 10px 5px;
+		border-bottom: 1px dashed #dedede;
+	}
+	

@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @shop.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @shop.address %>
+</p>
+
+<p>
+  <b>Land mark:</b>
+  <%= @shop.land_mark%>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @shop.phone %>
+</p>
+
+<p>
+  <b>Open time:</b>
+  <%= @shop.open_time %>
+</p>
+
+<p>
+  <b>Brief:</b>
+  <%= @shop.brief %>
+</p>
+
+<p>
+  <b>图片1:</b>
+  <%= image_tag @shop.photo1.url(:big) %>
+</p>
+
+<p>
+  <b>图片2:</b>
+  <%= image_tag @shop.photo2.url(:big) %>
+</p>
+
+<p>
+  <b>图片3:</b>
+  <%= image_tag @shop.photo3.url(:big) %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @shop.email %>
+</p>
+
+<p>
+  <b>Msn:</b>
+  <%= @shop.msn %>
+</p>
+
+<p>
+  <b>Qq:</b>
+  <%= @shop.qq %>
+</p>
+
+
+<%= link_to 'Edit', edit_shop_path(@shop) %> |
+<%= link_to 'Back', shops_path %>
