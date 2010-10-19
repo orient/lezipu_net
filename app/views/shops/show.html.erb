@@ -1,65 +1,66 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <label>Name:</label>
   <%= @shop.name %>
 </p>
 
 <p>
-  <b>Address:</b>
+  <label>Address:</label>
   <%= @shop.address %>
 </p>
 
 <p>
-  <b>Land mark:</b>
+  <label>Land mark:</label>
   <%= @shop.land_mark%>
 </p>
 
 <p>
-  <b>Phone:</b>
+  <label>Phone:</label>
   <%= @shop.phone %>
 </p>
 
 <p>
-  <b>Open time:</b>
+  <label>Open time:</label>
   <%= @shop.open_time %>
 </p>
 
 <p>
-  <b>Brief:</b>
+  <label>Brief:</label>
   <%= @shop.brief %>
 </p>
 
 <p>
-  <b>图片1:</b>
+  <label>图片1:</label>
   <%= image_tag @shop.photo1.url(:big) %>
 </p>
 
 <p>
-  <b>图片2:</b>
+  <label>图片2:</label>
   <%= image_tag @shop.photo2.url(:big) %>
 </p>
 
 <p>
-  <b>图片3:</b>
+  <label>图片3:</label>
   <%= image_tag @shop.photo3.url(:big) %>
 </p>
 
 <p>
-  <b>Email:</b>
+  <label>Email:</label>
   <%= @shop.email %>
 </p>
 
 <p>
-  <b>Msn:</b>
+  <label>Msn:</label>
   <%= @shop.msn %>
 </p>
 
 <p>
-  <b>Qq:</b>
+  <label>Qq:</label>
   <%= @shop.qq %>
 </p>
 
 
-<%= link_to 'Edit', edit_shop_path(@shop) %> |
-<%= link_to 'Back', shops_path %>
+<%= link_to 'Edit', edit_shop_path(@shop) %> 
+<a href="http://www.lezipu.com">返回首页</a>
+
