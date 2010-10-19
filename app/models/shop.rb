@@ -5,9 +5,9 @@ class Shop < ActiveRecord::Base
 	has_attached_file :photo3, :styles =>{:big =>"320x240>", :thumb => "80x80>"}
 	validates_attachment_presence :photo1
 	validates_attachment_size :photo1, :less_than =>3.megabytes
-	validates_attachment_content_type :photo1, :content_type => ['image/jpeg', 'image/png','image/gif']
+	validates_attachment_content_type :photo1, :content_type => ['image/jpeg', 'image/png','image/gif','image/pjpeg', 'image/x-png']
 	validates_attachment_size :photo2, :less_than =>3.megabytes
-	validates_attachment_content_type :photo2, :content_type => ['image/jpeg', 'image/png','image/gif']
+	validates_attachment_content_type :photo2, :content_type => ['image/jpeg', 'image/png','image/gif','image/pjpeg', 'image/x-png']
 	validates_attachment_size :photo3, :less_than =>3.megabytes
-	validates_attachment_content_type :photo3, :content_type => ['image/jpeg', 'image/png','image/gif']
+	validates_attachment_content_type :photo3, :content_type => ['image/jpeg', 'image/png','image/gif','image/pjpeg', 'image/x-png']
 end
