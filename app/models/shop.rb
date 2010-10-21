@@ -1,5 +1,5 @@
 class Shop < ActiveRecord::Base
-	validates_presence_of :name, :address, :phone, :open_time, :brief
+	validates_presence_of :address, :phone, :open_time, :brief,:name
 	has_attached_file :photo1, :styles =>{:big =>"320x240>", :thumb => "80x80>"}
 	has_attached_file :photo2, :styles =>{:big =>"320x240>", :thumb => "80x80>"}
 	has_attached_file :photo3, :styles =>{:big =>"320x240>", :thumb => "80x80>"}

@@ -1,68 +1,68 @@
 <%= form_for @shop, :html=>{:multipart=>true} do |f| %>
   <% if @shop.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@shop.errors.count, "error") %> prohibited this shop from being saved:</h2>
+      <h2>以下有<%= @shop.errors.count %>个必填项目，请补充完整:</h2>
 
-      <ul>
+      <!-- <ul>
       <% @shop.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
-      </ul>
+      </ul> -->
     </div>
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
+    <div><%= f.label :名称 %><span>***号为必填项目</span></div>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :address %>
+    <div><%= f.label :地址 %><span>***</span></div>
     <%= f.text_field :address %>
   </div>
     <div class="field">
-    <%= f.label :land_mark %>
+    <div><%= f.label :商圈（地标等补充信息） %></div>
     <%= f.text_field :land_mark %>
   </div>
   <div class="field">
-    <%= f.label :phone %>
+    <div><%= f.label :电话 %><span>***</span></div>
     <%= f.text_field :phone %>
   </div>
   <div class="field">
-    <%= f.label :open_time %>
+    <div><%= f.label :营业时间 %><span>***</span></div>
     <%= f.text_field :open_time %>
   </div>
   <div class="field">
-    <%= f.label :brief %>
+    <div><%= f.label :商户简介 %><span>***</span></div>
     <%= f.text_area :brief,:size=>"76x5" %>
   </div>
+  
   <div class="field">
-    <%= f.label :email %>
+    <div><%= f.label "图片1" %><span>***必须提供至少一张图片jpeg、gif、png</span></div>
+    <%= f.file_field :photo1 %>
+  </div>
+  <div class="field">
+    <div><%= f.label "图片2" %></div>
+    <%= f.file_field :photo2 %>
+  </div>
+  <div class="field">
+    <div><%= f.label "图片3" %></div>
+    <%= f.file_field :photo3 %>
+  </div>
+  
+  <div class="field">
+    <div><%= f.label :email邮箱 %></div>
     <%= f.text_field :email %>
   </div>
   
   <div class="field">
-    <%= f.label "图片1" %>
-    <%= f.file_field :photo1 %>
-  </div>
-  <div class="field">
-    <%= f.label "图片2" %>
-    <%= f.file_field :photo2 %>
-  </div>
-  <div class="field">
-    <%= f.label "图片3" %>
-    <%= f.file_field :photo3 %>
-  </div>
-  
-  
-  <div class="field">
-    <%= f.label :msn %>
+    <div><%= f.label :Msn %></div>
     <%= f.text_field :msn %>
   </div>
   <div class="field">
-    <%= f.label :qq %>
+    <div><%= f.label :QQ %></div>
     <%= f.text_field :qq %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "确认提交" %>
   </div>
 <% end %>
