@@ -1,7 +1,7 @@
 <%= form_for @shop, :html=>{:multipart=>true} do |f| %>
   <% if @shop.errors.any? %>
     <div id="error_explanation">
-      <h2>以下有<%= @shop.errors.count %>个必填项目，请补充完整:</h2>
+      <h2>以下有<%= @shop.errors.count %>个必填项目，请补充完整,必须提供至少一张图片:</h2>
 
       <!-- <ul>
       <% @shop.errors.full_messages.each do |msg| %>
@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <div><%= f.label :名称 %><span>***号为必填项目</span></div>
+    <div><%= f.label :名称 %><span>***号为必填项目,必须提供至少一张图片，支持格式jpeg、gif、png:</span></div>
     <%= f.text_field :name %>
   </div>
   <div class="field">
@@ -37,7 +37,7 @@
   </div>
   
   <div class="field">
-    <div><%= f.label "图片1" %><span>***必须提供至少一张图片jpeg、gif、png</span></div>
+    <div><%= f.label "图片1" %><span>***</span></div>
     <%= f.file_field :photo1 %>
   </div>
   <div class="field">
