@@ -1,4 +1,6 @@
 class ShopsController < ApplicationController
+	before_filter :authenticate, :only=>'index'
+	
   # GET /shops
   # GET /shops.xml
   def index
@@ -79,5 +81,12 @@ class ShopsController < ApplicationController
       format.html { redirect_to(shops_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  protected
+  def authenticate
+  	authenticate_or_request_with_http_basic do |username, password|
+  		username=='lezipu' && password=='lvdong'
+  	end
   end
 end
