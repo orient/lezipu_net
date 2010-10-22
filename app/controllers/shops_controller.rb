@@ -5,7 +5,8 @@ class ShopsController < ApplicationController
   # GET /shops
   # GET /shops.xml
   def index
-    @shops = Shop.all
+    @shops = Shop.find(:all).paginate :per_page => 10 , :page => params[:page]
+
 
     respond_to do |format|
       format.html # index.html.erb
