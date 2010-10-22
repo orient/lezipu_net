@@ -1,3 +1,4 @@
+#encoding = utf-8
 class ShopsController < ApplicationController
 	before_filter :authenticate, :only=>'index'
 	
@@ -46,7 +47,7 @@ class ShopsController < ApplicationController
 
     respond_to do |format|
       if @shop.save
-        format.html { redirect_to(@shop, :notice => 'Shop was successfully created.') }
+        format.html { redirect_to(@shop, :notice => '店铺新增成功！') }
         format.xml  { render :xml => @shop, :status => :created, :location => @shop }
       else
         format.html { render :action => "new" }
@@ -62,7 +63,7 @@ class ShopsController < ApplicationController
 
     respond_to do |format|
       if @shop.update_attributes(params[:shop])
-        format.html { redirect_to(@shop, :notice => 'Shop was successfully updated.') }
+        format.html { redirect_to(@shop, :notice => '店铺修改成功！') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

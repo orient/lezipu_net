@@ -1,13 +1,13 @@
-<h1>Listing shops</h1>
+<h1>店铺列表</h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Address</th>
-    <th>Land mark</th>
-    <th>Phone</th>
-    <th>Open time</th>
-    <th>Brief</th>
+    <th>名称：</th>
+    <th>地址：</th>
+    <th>商圈/地标：</th>
+    <th>电话：</th>
+    <th>营业时间：</th>
+    <th>简介：</th>
     <th>Email</th>
     <th>Msn</th>
     <th>Qq</th>
@@ -27,13 +27,13 @@
     <td><%= shop.email %></td>
     <td><%= shop.msn %></td>
     <td><%= shop.qq %></td>
-    <td><%= link_to 'Show', shop %></td>
-    <td><%= link_to 'Edit', edit_shop_path(shop) %></td>
-    <td><%= link_to 'Destroy', shop, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to '预览', shop %></td>
+    <td><%= link_to '编辑', edit_shop_path(shop) %></td>
+    <td><%= link_to '删除', shop, :confirm => '确认删除?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Shop', new_shop_path %>
+<%= link_to '新增店铺', new_shop_path %>

@@ -10,9 +10,9 @@
       </ul> -->
     </div>
   <% end %>
-
+  <p class="headsup"><span class="highlight">***</span>号为必填项目,必须提供至少一张图片，支持格式jpeg、gif、png:</p>
   <div class="field">
-    <div><%= f.label :名称 %><span>***号为必填项目,必须提供至少一张图片，支持格式jpeg、gif、png:</span></div>
+    <div><%= f.label :名称 %><span>***</span></div>
     <%= f.text_field :name %>
   </div>
   <div class="field">
@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <div><%= f.label :商户简介 %><span>***</span></div>
-    <%= f.text_area :brief,:size=>"76x5" %>
+    <%= f.text_area :brief %>
   </div>
   
   <div class="field">

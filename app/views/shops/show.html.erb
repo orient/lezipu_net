@@ -1,66 +1,65 @@
+<div class="newshop_content">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <label>名称:</label>
+  <span>名称:</span>
   <%= @shop.name %>
 </p>
 
 <p>
-  <label>地址:</label>
+  <span>地址:</span>
   <%= @shop.address %>
 </p>
 
 <p>
-  <label>商圈/地标:</label>
+  <span>商圈/地标:</span>
   <%= @shop.land_mark%>
 </p>
 
 <p>
-  <label>联系电话:</label>
+  <span>联系电话:</span>
   <%= @shop.phone %>
 </p>
 
 <p>
-  <label>营业时间:</label>
+  <span>营业时间:</span>
   <%= @shop.open_time %>
 </p>
 
 <p>
-  <label>店铺简介:</label>
+  <span>店铺简介:</span>
   <%= @shop.brief %>
 </p>
 
 <p>
-  <label>图片1:</label>
-  <%= image_tag @shop.photo1.url(:big) %>
+  <span>图片:</span>
+  <%= image_tag @shop.photo1.url(:big),:class=>"addshoppic"%>
+  <% if @shop.photo2_file_name%>
+ 	 <%= image_tag @shop.photo2.url(:big),:class=>"addshoppic"%>
+  <% end %>
+  <% if @shop.photo3_file_name%>
+  	<%= image_tag @shop.photo3.url(:big),:class=>"addshoppic"%>
+  <% end %>
 </p>
 
 <p>
-  <label>图片2:</label>
-  <%= image_tag @shop.photo2.url(:big) %>
-</p>
-
-<p>
-  <label>图片3:</label>
-  <%= image_tag @shop.photo3.url(:big) %>
-</p>
-
-<p>
-  <label>Email:</label>
+  <span>Email:</span>
   <%= @shop.email %>
 </p>
 
 <p>
-  <label>Msn:</label>
+  <span>Msn:</span>
   <%= @shop.msn %>
 </p>
 
 <p>
-  <label>Qq:</label>
+  <span>Qq:</span>
   <%= @shop.qq %>
 </p>
 
-
-<%= link_to '修改', edit_shop_path(@shop) %> 
-<a href="http://www.lezipu.com">返回首页</a>
+<div>
+	<%= link_to '修改', edit_shop_path(@shop), :class=>"button green edit" %> 
+	<%= link_to '继续添加店铺', new_shop_path, :class=>"button green addnew" %>
+	<a class="button green" href="http://www.lezipu.com">返回首页</a></div>
+</div>
 
