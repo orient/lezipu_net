@@ -3,5 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 public/system/photo1s/*
-public/system/photo1s/*
-public/system/photo1s/*
+public/system/photo2s/*
+public/system/photo3s/*
