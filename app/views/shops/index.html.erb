@@ -11,9 +11,9 @@
     <th>Email</th>
     <th>Msn</th>
     <th>Qq</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>图片1</th>
+    <th>图片2</th>
+    <th>图片3</th>
   </tr>
 
 <% @shops.each do |shop| %>
@@ -27,6 +27,10 @@
     <td><%= shop.email %></td>
     <td><%= shop.msn %></td>
     <td><%= shop.qq %></td>
+    <td><%= image_tag shop.photo1.url(:thumb)%></td>
+    <td><% if shop.photo2_file_name%><%= image_tag shop.photo2.url(:thumb)%><% end %></td>
+    <td><% if shop.photo3_file_name%><%= image_tag shop.photo3.url(:thumb)%><% end %></td>
+    
     <td><%= link_to '预览', shop %></td>
     <td><%= link_to '编辑', edit_shop_path(shop) %></td>
     <td><%= link_to '删除', shop, :confirm => '确认删除?', :method => :delete %></td>
